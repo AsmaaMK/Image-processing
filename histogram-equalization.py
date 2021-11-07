@@ -8,6 +8,7 @@ src = cv.imread(imgPath)
 src = cv.cvtColor(src, cv.COLOR_BGR2GRAY)
 # store the output of the equalized image
 dst = cv.equalizeHist(src)
+cv.imwrite('output-imgs/equalized-img.png', dst)
 
 # show the source and the equalized images 
 cv.imshow('Source image', src)
