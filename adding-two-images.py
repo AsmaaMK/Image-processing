@@ -8,4 +8,4 @@ src2 = cv.imread('img/opencv.png', cv.IMREAD_COLOR)
 dst = cv.addWeighted(src1, 0.5, src2, 0.5, 0.0)
 
 # save the output image
-cv.imwrite('added-image.png', dst)
+cv.imwrite('output-imgs/added-image.png', dst)

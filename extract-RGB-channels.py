@@ -15,16 +15,16 @@ redImg = np.zeros(src.shape)
 redImg[:,:,2] = redChannel
 
 #save image
-cv.imwrite('img/rgb.png-red-channel.png',redImg) 
+cv.imwrite('output-imgs/rgb.png-red-channel.png',redImg) 
 
 # extract green channel
 greenChannel = src[:,:,1]
 greenImg = np.zeros(src.shape)
 greenImg[:,:,1] = greenChannel
-cv.imwrite('img/rgb.png-green-channel.png',greenImg) 
+cv.imwrite('output-imgs/rgb.png-green-channel.png',greenImg) 
 
 # extract blue channel
 blueChannel = src[:,:,0]
 blueImg = np.zeros(src.shape)
 blueImg[:,:,0] = blueChannel
-cv.imwrite('img/rgb.png-blue-channel.png',blueImg)
+cv.imwrite('output-imgs/rgb.png-blue-channel.png',blueImg)
